@@ -12,6 +12,10 @@ const baseUrl = "https://pokeapi.co/api/v2"
 const pokemonEndpoint = baseUrl + "/pokemon/%s"
 
 func GetPokemon(idOrName string) (*pokemon.Pokemon, error) {
+	if idOrName == "" {
+		return nil, fmt.Errorf("idOrName must not be empty")
+	}
+
 	resp, err := http.Get(fmt.Sprintf(pokemonEndpoint, idOrName))
 
 	if err != nil {
