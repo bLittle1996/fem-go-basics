@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"front-end-masters/go-basics/server/api"
 	"html/template"
 	"net/http"
 	"os"
@@ -52,6 +53,8 @@ func main() {
 
 		testTemplate.Execute(w, templateData)
 	}))
+
+	server.Handle("/api/items", http.HandlerFunc(api.GetItems))
 
 	err := http.ListenAndServe(":42069", server)
 
