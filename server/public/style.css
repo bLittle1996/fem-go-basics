@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  color: white;
+}
+
+h1 {
+  color: red;
+}
+
+[data-rarity="uncommon"] {
+  color: green;
+}
+
+[data-rarity="rare"] {
+  color: red;
+}

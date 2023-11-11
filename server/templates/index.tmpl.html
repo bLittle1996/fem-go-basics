@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First template!!</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h1>
+        I am a SSR template! :)
+    </h1>
+
+    <main>
+        <h2>Cool Items</h2>
+        <ul>
+        {{ range . }}
+            <li data-rarity="{{.Rarity}}">
+                <div >
+                    <p>{{.Name}}</p>
+                    <p>{{.Description}}<p>
+                </div>
+            </li>
+        {{ end }}
+        <ul>
+    </main>
+
+
+    <script src="/script.js" defer></script>
+</body>
+</html>

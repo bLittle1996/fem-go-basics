@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Ukelele",
+    "description": "...and his music was electric!",
+    "rarity": "uncommon"
+  },
+  {
+    "name": "ATG Mk. 1",
+    "description": "I don't remember but it shoots missiles!!!",
+    "rarity": "uncommon"
+  },
+
+  {
+    "name": "Tri-Tip Dagger",
+    "description": "it's the bleed item!",
+    "rarity": "common"
+  },
+  {
+    "name": "Bungus",
+    "description": ":)",
+    "rarity": "common"
+  },
+  {
+    "name": "Roll of Pennies",
+    "description": "I don't actually know any of the descriptions except for Ukelele",
+    "rarity": "common"
+  },
+  {
+    "name": "ICBM",
+    "description": "Makes your missiles more missles",
+    "rarity": "rare"
+  }
+]
