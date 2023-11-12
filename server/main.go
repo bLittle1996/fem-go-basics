@@ -55,6 +55,7 @@ func main() {
 	}))
 
 	server.Handle("/api/items", http.HandlerFunc(api.GetItems))
+	server.Handle("/api/items/add", http.HandlerFunc(api.PostItem))
 
 	err := http.ListenAndServe(":42069", server)
 
